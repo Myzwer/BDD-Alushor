@@ -32,31 +32,31 @@ module.exports = {
 
             // The light text color used on the site. It will be white or close to it.
             white: {
-                DEFAULT: '#eae5df',
+                DEFAULT: '#F9F7F3',
             },
 
             // The dark text color used on the site. It will be black or close to it.
             black: {
-                DEFAULT: '#333333',
+                DEFAULT: '#232323',
             },
 
             // The client's primary wedding color + a close variation of the color. Ideally a dark color.
             primary: {
-                DEFAULT: '#435947',
-                alt: '#2d3b30',
-                special: '#344939',
+                DEFAULT: '#C17878',
+                alt: '#8f5050',
+                special: '#9d5c5c',
             },
 
             // The client's secondary wedding color + a close variation. Ideally a light color.
             secondary: {
-                DEFAULT: '#e2c8c6',
-                alt: '#c88a85',
+                DEFAULT: '#E5C9B5',
+                alt: '#c9ae99',
             },
 
             // This is for buttons, it should be complementary but different than primary and secondary
             accent: {
-                DEFAULT: '#9f5457',
-                alt: '#9a3b3e',
+                DEFAULT: '#86656E',
+                alt: '#694b54',
             },
         },
     },

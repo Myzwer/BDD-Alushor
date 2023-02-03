@@ -15,42 +15,16 @@
 $content-width: 2000px; // How wide or narrow do you want the bar to be?
 $breakpoint: 1001px; // When do you want to switch from mobile to desktop?
 $nav-height: 70px; // How tall do you want the navbar to be?
-$nav-background: #435947; // What background color do you want?
-$nav-font-color: #eae5df; // What primary font color?
-$link-hover-color: #9f5457; // What color when you hover?
-$button-color: #9f5457; // What background color do you want the button to be?
-$button-hover-color: #9a3b3e; // What hover color do you want the button to be?
+$nav-background: #C17878; // What background color do you want?
+$nav-font-color: #F9F7F3; // What primary font color?
+$link-hover-color: #86656E; // What color when you hover?
+$button-color: #86656E; // What background color do you want the button to be?
+$button-hover-color: #694b54; // What hover color do you want the button to be?
 
 // Outer navigation wrapper
 .navigation {
   background: $nav-background;
   height: $nav-height;
-}
-
-// Logo and branding
-.brand {
-  float: left;
-  font-size: 1.4em;
-  font-weight: 400;
-  line-height: $nav-height;
-  padding-left: 20px;
-  position: absolute;
-  text-transform: uppercase;
-  a,
-  a:visited {
-    color: $nav-font-color;
-    text-decoration: none;
-  }
-
-  // If you change your navbar height, you may need to adjust this.
-  img {
-    height: 70px;
-    padding-right: 15px;
-  }
-
-  h1 {
-    display: none;
-  }
 }
 
 // Container with no padding for navbar
@@ -228,6 +202,7 @@ nav {
 .nav-list > li:last-of-type a {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
   color: #eeeeee;
   font-weight: 600;
 }
