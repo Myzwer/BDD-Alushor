@@ -4,6 +4,9 @@ module.exports = {
      * More information: https://tailwindcss.com/blog/tailwindcss-v3
      */
     theme: {
+        fill: {
+            current: 'currentColor',
+        },
         screens: {
             sm: '39.9375em',
             // => @media (min-width: 640px) { ... }
