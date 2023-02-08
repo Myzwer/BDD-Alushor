@@ -16,18 +16,23 @@
 					</h2>
 				</div>
 			</div>
+			<div class="absolute bottom-0 z-2 w-full">
+				<svg class = "fill-current text-secondary" viewBox="0 0 1737 181" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 74.5L72.5 83.5C145.5 92.5 289.5 109.5 434.5 127.5C579.5 144.5 723.5 161.5 868.5 135.5C1013.5 109.5 1157.5 40.5 1302.5 14.5C1447.5 -11.5 1591.5 5.49998 1664.5 14.5L1736.5 22.5V181H1664.5C1591.5 181 1447.5 181 1302.5 181C1157.5 181 1013.5 181 868.5 181C723.5 181 579.5 181 434.5 181C289.5 181 145.5 181 72.5 181H0.5L0.5 74.5Z"/>
+				</svg>
+			</div>
 		</div>
 		<div class="bg-secondary py-10">
 			<div class="text-center mx-auto md:max-w-2xl">
-				<h2 class="body-font text-xl font-bold pb-1">Save The Date</h2>
-				<h1 class="body-font text-3xl uppercase">{{ weddingDate }}</h1>
+				<h1 class="body-font text-3xl uppercase">We're Getting Married!</h1>
+				<h2 class="body-font text-xl font-bold pb-1">{{ weddingDate }}</h2>
 				<CountdownToDate/>
 			</div>
 			<div class="text-center mb-10">
 				<a
 					:href="rsvpLink"
 					target="_blank"
-					class="bg-accent text-white uppercase rounded-md font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+					class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
 				>
 					RSVP!
 				</a>
@@ -35,6 +40,9 @@
 		</div>
 
 		<div class="bg-primary">
+			<svg class = "fill-current text-secondary" viewBox="0 0 1736 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M1736 98L1664 89C1591 80 1447 63 1302 45.0001C1157 28.0001 1013 11.0001 868 37.0001C723 63.0001 579 132 434 158C289 184 145 167 72 158L-1.90808e-06 150L-1.50215e-05 7.5472e-05L72 6.91776e-05C145 6.27957e-05 289 5.02068e-05 434 3.75305e-05C579 2.48542e-05 723 1.22653e-05 868 -4.10975e-07C1013 -1.30873e-05 1157 -2.56762e-05 1302 -3.83525e-05C1447 -5.10288e-05 1591 -6.36176e-05 1664 -6.99995e-05L1736 -7.62939e-05L1736 98Z"/>
+			</svg>
 			<div class="text-center mx-auto max-w-2xl md:max-w-5xl">
 				<div class="grid grid-cols-12 gap-4 pt-10 pb-12">
 					<div class="col-span-12 md:col-span-6 px-5">
