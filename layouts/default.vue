@@ -100,7 +100,9 @@
                             </li>
 
                             <li>
-                                <a :href="rsvpLink">RSVP</a>
+                                <a
+									class = "button-xl"
+								   :href="rsvpLink">RSVP</a>
                             </li>
                         </ul>
                     </VueSlideToggle>

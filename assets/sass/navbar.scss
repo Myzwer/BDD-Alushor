@@ -34,9 +34,10 @@ $button-hover-color: #694b54; // What hover color do you want the button to be?
   max-width: $content-width;
 }
 
+
+
 // Navigation
 nav {
-  float: right;
   position: absolute;
   ul {
     list-style: none;
@@ -85,7 +86,12 @@ nav {
 .nav-dropdown {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
   position: absolute;
-  z-index: 1;
+  z-index: 3;
+}
+
+// Not technically used IN the navbar but its used to make sure you can see the navbar
+.z-2 {
+  z-index: 2;
 }
 
 /* Mobile navigation */
@@ -106,9 +112,11 @@ nav {
     display: block;
   }
 
-  .brand {
-    padding-left: 10px;
+  // Dropdown list binds to JS toggle event
+  .nav-dropdown {
+    border: 0 ;
   }
+
   nav {
     padding: $nav-height 0 15px;
     width: 100%;
@@ -193,6 +201,7 @@ nav {
   background-color: $button-color;
   color: #333333;
   cursor: pointer;
+  float: none;
   letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
@@ -201,7 +210,7 @@ nav {
 
 .nav-list > li:last-of-type a {
   background-color: rgba(0, 0, 0, 0);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   border-radius: 10px;
   color: #eeeeee;
   font-weight: 600;
@@ -223,6 +232,7 @@ nav {
 @media screen and (min-width: $breakpoint) {
   .nav-list > li:last-of-type {
     border-radius: 10px;
+    float: right;
     margin-left: 6px;
     margin-right: 10px;
     margin-top: 14px;
@@ -241,6 +251,11 @@ nav {
     line-height: 10px;
     padding: 15px;
   }
+
+  .button-xl {
+    padding: 15px 70px !important;
+  }
+
 }
 
 // This fixes an issue where the block of code above compresses the last line of the dropdown menus.
