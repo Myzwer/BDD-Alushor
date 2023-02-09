@@ -23,7 +23,7 @@
 			</div>
 		</div>
 		<div class="bg-secondary py-10">
-			<div class="text-center mx-auto md:max-w-2xl">
+			<div class="text-center mx-auto md:max-w-3xl">
 				<h1 class="body-font text-3xl uppercase">We're Getting Married!</h1>
 				<h2 class="body-font text-xl font-bold pb-1">{{ weddingDate }}</h2>
 				<CountdownToDate/>
