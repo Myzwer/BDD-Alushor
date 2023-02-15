@@ -2,6 +2,9 @@
     <div>
         <div class="relative">
             <div class="groomsmen-h1-background">
+				<div class="absolute z-2 w-full">
+					<TopWave color="text-primary"/>
+				</div>
                 <div class="content-middle text-white text-center">
                     <h1 class="text-7xl mb-2 px-2">Meet The Guys</h1>
                     <h2 class="text-xl font-bold uppercase body-font">
@@ -9,6 +12,9 @@
                     </h2>
                 </div>
             </div>
+			<div class="absolute bottom-0 z-2 w-full">
+				<BottomWave color="text-secondary"/>
+			</div>
         </div>
 
         <SingleBio
@@ -22,6 +28,7 @@
             :twitter="bio.twitter"
             :even="index % 2 === 0"
             :description="bio.description"
+			:last="index === groomsmen.length - 1"
         />
 
         <button-footer />

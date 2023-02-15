@@ -2,9 +2,9 @@
     <!-- State management of background color-->
     <div
         :class="`
-		${even ? 'bg-primary-alt' : 'bg-secondary'}`"
+		${even ? 'bg-secondary' : 'bg-primary'}`"
     >
-        <div class="text-center mx-auto max-w-2xl md:max-w-7xl">
+        <div class="text-center mx-auto max-w-2xl md:max-w-6xl">
             <div class="grid grid-cols-12 gap-4 pt-10 pb-12">
                 <div
                     :class="`col-span-12 md:col-span-5 px-5
@@ -16,7 +16,7 @@
                 <!-- State management of text color -->
                 <div
                     :class="`col-span-12 md:col-span-7 px-5
-					${even ? 'text-white' : 'text-black'}`"
+					${even ? 'text-black' : 'text-white'}`"
                 >
                     <h2 class="pt-7 text-5xl text-left">{{ name }}</h2>
                     <h3 class="pb-5 uppercase text-left body-font font-bold">
@@ -33,7 +33,7 @@
                                 <a :href="facebook" target="_blank">
                                     <div
                                         :class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-white border-white' : 'text-black border-black'}`"
+										${even ? 'text-black border-black' : 'text-white border-white'}`"
                                     >
                                         <font-awesome-icon
                                             icon="fa-brands fa-facebook"
@@ -50,10 +50,10 @@
                         >
                             <div class="pb-2 md:pb-5">
                                 <a :href="instagram" target="_blank">
-                                    <div
-                                        :class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-white border-white' : 'text-black border-black'}`"
-                                    >
+									<div
+										:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
+										${even ? 'text-black border-black' : 'text-white border-white'}`"
+									>
                                         <font-awesome-icon
                                             icon="fa-brands fa-instagram"
                                         />
@@ -69,10 +69,10 @@
                         >
                             <div class="pb-2 md:pb-5">
                                 <a :href="twitter" target="_blank">
-                                    <div
-                                        :class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-white border-white' : 'text-black border-black'}`"
-                                    >
+									<div
+										:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
+										${even ? 'text-black border-black' : 'text-white border-white'}`"
+									>
                                         <font-awesome-icon
                                             icon="fa-brands fa-twitter"
                                         />
@@ -85,6 +85,25 @@
                 </div>
             </div>
         </div>
+		<div
+			v-if="!last"
+			:class="`${even ? 'hidden' : 'block'}`"
+		>
+			<BottomWave color = "text-secondary" />
+		</div>
+
+		<div
+			v-if="!last"
+			:class="`${even ? 'block' : 'hidden'}`"
+		>
+			<BottomWave color = "text-primary" />
+		</div>
+
+		<div v-if="last"
+		>
+			<BottomWave color="text-primary-alt" />
+		</div>
+
     </div>
 </template>
 
@@ -127,6 +146,11 @@ export default {
             default: null,
             required: false,
         },
+		last: {
+			type: Boolean,
+			default: null,
+			required: false,
+		}
     },
 }
 </script>
