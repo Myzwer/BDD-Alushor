@@ -24,12 +24,12 @@
                     </h3>
                     <p class="text-left pb-5">{{ description }}</p>
 
-                    <div class="grid grid-cols-12 gap-4 pb-12">
+                    <div class="block relative text-left">
                         <div
                             v-if="facebook != null"
                             class="inline-block"
                         >
-                            <div class="pb-2 md:pb-5 mr-5">
+                            <div class="pb-2 md:pb-5 mr-3">
                                 <a :href="facebook" target="_blank">
                                     <div
                                         :class="`text-4xl
@@ -48,7 +48,7 @@
                             v-if="instagram != null"
                             class="inline-block"
                         >
-                            <div class="pb-2 md:pb-5 mr-5">
+                            <div class="pb-2 md:pb-5 mr-3">
                                 <a :href="instagram" target="_blank">
 									<div
 										:class="`text-4xl
@@ -66,7 +66,7 @@
                             v-if="twitter != null"
                             class="inline-block "
                         >
-                            <div class="pb-2 md:pb-5 mr-5">
+                            <div class="pb-2 md:pb-5 mr-3">
                                 <a :href="twitter" target="_blank">
 									<div
 										:class="`text-4xl
