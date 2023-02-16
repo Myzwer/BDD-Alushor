@@ -7,10 +7,10 @@
         <div class="text-center mx-auto max-w-2xl md:max-w-6xl">
             <div class="grid grid-cols-12 gap-4 pt-10 pb-12">
                 <div
-                    :class="`col-span-12 md:col-span-5 px-5
+                    :class="`col-span-12 md:col-span-5 px-5 md:mt-10
 					${even ? '' : 'md:order-2'}`"
                 >
-                    <img :src="image" class="rounded-xl shadow-lg" alt="" />
+                    <img :src="image" alt="" />
                 </div>
 
                 <!-- State management of text color -->
@@ -18,7 +18,7 @@
                     :class="`col-span-12 md:col-span-7 px-5
 					${even ? 'text-black' : 'text-white'}`"
                 >
-                    <h2 class="pt-7 text-5xl text-left">{{ name }}</h2>
+                    <h2 class="pt-7 text-6xl text-left">{{ name }}</h2>
                     <h3 class="pb-5 uppercase text-left body-font font-bold">
                         {{ title }}
                     </h3>
@@ -27,18 +27,18 @@
                     <div class="grid grid-cols-12 gap-4 pb-12">
                         <div
                             v-if="facebook != null"
-                            class="col-span-12 lg:col-span-4"
+                            class="inline-block"
                         >
-                            <div class="pb-2 md:pb-5">
+                            <div class="pb-2 md:pb-5 mr-5">
                                 <a :href="facebook" target="_blank">
                                     <div
-                                        :class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
+                                        :class="`text-4xl
+                                        ${even ? 'text-black' : 'text-white'}`"
                                     >
                                         <font-awesome-icon
                                             icon="fa-brands fa-facebook"
                                         />
-                                        Facebook
+
                                     </div>
                                 </a>
                             </div>
@@ -46,18 +46,17 @@
 
                         <div
                             v-if="instagram != null"
-                            class="col-span-12 lg:col-span-4"
+                            class="inline-block"
                         >
-                            <div class="pb-2 md:pb-5">
+                            <div class="pb-2 md:pb-5 mr-5">
                                 <a :href="instagram" target="_blank">
 									<div
-										:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
+										:class="`text-4xl
+										${even ? 'text-black' : 'text-white'}`"
 									>
                                         <font-awesome-icon
                                             icon="fa-brands fa-instagram"
                                         />
-                                        Instagram
                                     </div>
                                 </a>
                             </div>
@@ -65,23 +64,23 @@
 
                         <div
                             v-if="twitter != null"
-                            class="col-span-12 lg:col-span-4"
+                            class="inline-block "
                         >
-                            <div class="pb-2 md:pb-5">
+                            <div class="pb-2 md:pb-5 mr-5">
                                 <a :href="twitter" target="_blank">
 									<div
-										:class="`border-2 uppercase rounded-md font-bold shadow-lg px-8 py-3 ease-in-out duration-300 hover:bg-accent hover:text-white hover:border-white
-										${even ? 'text-black border-black' : 'text-white border-white'}`"
+										:class="`text-4xl
+										${even ? 'text-black' : 'text-white'}`"
 									>
                                         <font-awesome-icon
                                             icon="fa-brands fa-twitter"
                                         />
-                                        Twitter
                                     </div>
                                 </a>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
