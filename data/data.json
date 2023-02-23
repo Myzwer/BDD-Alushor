@@ -127,6 +127,9 @@
     "address2": "8629 J M Keynes Dr,",
     "address3": "Charlotte, NC 28262"
   },
+  "hotelImage": {
+    "image": "/images/venue/venue-hotels.png"
+  },
   "hotels": [
     {
       "name": "Hilton Charlotte University",
