@@ -262,5 +262,8 @@
       "item3": "Beyond",
       "link": "https://www.bedbathandbeyond.com/"
     }
-  ]
+  ],
+  "sideImages": {
+    "contact": "/images/contact/contact-side.png"
+  }
 }
