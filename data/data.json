@@ -153,6 +153,9 @@
       "link": "https://dunhillhotel.com/"
     }
   ],
+  "scheduleImage": {
+    "image": "/images/schedule/schedule-side.png"
+  },
   "schedules": [
     {
       "time": "5:00PM",
