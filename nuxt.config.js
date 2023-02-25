@@ -8,7 +8,7 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'Fairbank Fairytale | James + Courtney',
+        title: 'Forever a Fairbank | James + Courtney',
         meta: [
             { charset: 'utf-8' },
             {
