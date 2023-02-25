@@ -207,7 +207,7 @@ export default {
 .index-h1-background {
 	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
 	url('~static/images/index/index-head.jpg');
-	height: 60vh;
+	height: 70vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
