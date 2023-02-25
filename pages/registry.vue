@@ -2,12 +2,18 @@
     <div>
         <div class="relative">
             <div class="registry-h1-background">
+				<div class="absolute z-2 w-full">
+					<TopWave color="text-primary"/>
+				</div>
                 <div class="content-middle text-white text-center">
                     <h1 class="text-7xl mb-2 px-2">Registry</h1>
                     <h2 class="text-xl font-bold uppercase body-font">
                         {{ hashtag }}
                     </h2>
                 </div>
+				<div class="absolute bottom-0 z-2 w-full">
+					<BottomWave color="text-secondary"/>
+				</div>
             </div>
         </div>
 
@@ -16,8 +22,8 @@
                 <div
                     class="grid grid-cols-12 gap-4 pt-10 pb-12 text-white px-5"
                 >
-                    <div class="col-span-12 text-left">
-                        <h2 class="text-5xl text-black">Our Registries</h2>
+                    <div class="col-span-12 text-center">
+                        <h2 class="text-6xl text-black">Our Registries</h2>
                     </div>
 
                     <RegistryLinks
@@ -31,6 +37,7 @@
                     />
                 </div>
             </div>
+			<BottomWave color = "text-primary" />
         </div>
     </div>
 </template>
