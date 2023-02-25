@@ -35,7 +35,7 @@
 							<a
 								:href="ceremonyMap"
 								target="_blank"
-								class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+								class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-10 md:px-20 py-3 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl mt-10"
 							>
 								Launch in Maps
 								<font-awesome-icon
@@ -60,7 +60,7 @@
 							<a
 								:href="receptionMap"
 								target="_blank"
-								class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+								class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-10 md:px-20 py-3 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl mt-10"
 							>
 								Launch in Maps
 								<font-awesome-icon

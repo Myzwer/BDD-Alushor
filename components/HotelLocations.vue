@@ -12,7 +12,7 @@
 				<a
 					:href="link"
 					target="_blank"
-					class="bg-accent text-white uppercase rounded-md font-bold shadow-lg text-white px-8 py-3 mt-10 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl"
+					class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-10 md:px-20 py-3 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl mt-10"
 				>
 					View Website
 					<font-awesome-icon

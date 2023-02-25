@@ -28,7 +28,7 @@
 				<a
 					:href="rsvpLink"
 					target="_blank"
-					class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-purple-hover mt-10"
+					class="bg-accent text-white uppercase rounded-full font-bold shadow-lg px-20 py-3 transition duration-300 ease-in-out hover:bg-accent-alt hover:shadow-xl mt-10"
 				>
 					RSVP!
 				</a>
@@ -68,7 +68,7 @@
 								<div class="text-left mb-10">
 									<NuxtLink
 										to="/groom"
-										class="text-white uppercase rounded-full font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-white uppercase rounded-full font-bold border-white border-2 px-10 py-2 transition duration-300 ease-in-out hover:bg-accent mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -103,7 +103,7 @@
 								<div class="text-left mb-10">
 									<NuxtLink
 										to="/bride"
-										class="text-white uppercase rounded-full font-bold border-white border-2 px-8 py-3 transition duration-300 ease-in-out hover:bg-accent mt-10"
+										class="text-white uppercase rounded-full font-bold border-white border-2 px-10 py-2 transition duration-300 ease-in-out hover:bg-accent hover:shadow-lg mt-10"
 									>
 										Read More
 									</NuxtLink>
@@ -135,7 +135,7 @@
 						<div class="text-left mb-10">
 							<NuxtLink
 								to="/the-couple"
-								class="text-black uppercase rounded-full font-bold border-black border-2 px-8 py-3 transition duration-300 ease-in-out hover:text-white hover:bg-accent mt-10"
+								class="text-black uppercase rounded-full font-bold border-black border-2 px-10 py-2 transition duration-300 ease-in-out hover:text-white hover:bg-primary hover:shadow-lg mt-10"
 							>
 								Read More
 							</NuxtLink>
