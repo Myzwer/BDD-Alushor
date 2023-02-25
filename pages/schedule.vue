@@ -46,7 +46,7 @@
 
 <script>
 import ScheduleList from '~/components/ScheduleList'
-import { schedules, tagline, scheduleImage } from '~/data/data.json'
+import { schedules, tagline, sideImages } from '~/data/data.json'
 export default {
     name: 'EventSchedule',
     components: { ScheduleList },
@@ -54,7 +54,7 @@ export default {
         return {
             schedules,
             hashtag: tagline.hashtag,
-			scheduleImage: scheduleImage.image
+			scheduleImage: sideImages.schedule
         }
     },
 }

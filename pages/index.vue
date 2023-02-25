@@ -205,9 +205,9 @@ export default {
 <style>
 /* stylelint-disable color-function-notation */
 .index-h1-background {
-	background: linear-gradient(rgba(0, 0, 0, 70%), rgba(0, 0, 0, 70%)),
+	background: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
 	url('~static/images/index/index-head.jpg');
-	height: 70vh;
+	height: 60vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

@@ -156,7 +156,7 @@ import {
 	tagline,
 	ceremonyAddress,
 	receptionAddress,
-	hotelImage
+	sideImages
 } from '~/data/data.json'
 
 export default {
@@ -174,7 +174,7 @@ export default {
 			receptionLine1: receptionAddress.address1,
 			receptionLine2: receptionAddress.address2,
 			receptionLine3: receptionAddress.address3,
-			hotelImage: hotelImage.image,
+			hotelImage: sideImages.hotel,
 
 			// latlong.net/convert-address-to-lat-long.html
 			center: {
